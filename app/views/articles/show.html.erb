@@ -1,0 +1,8 @@
+<div class="container">
+  <h1><%= @article.title %></h1>
+  <p> <%= @article.content %> </p>
+  <%= link_to 'Back to Menu', articles_path %>
+  <%= link_to "Delete", article_path(@article), :class => 'btn btn-danger',
+        method: :delete,
+        data: { confirm: "Are you sure?" } %>
+</div>
